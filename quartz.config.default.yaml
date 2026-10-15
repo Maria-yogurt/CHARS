@@ -1,4 +1,3 @@
-
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: Архив персонажей
@@ -8,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: ru-RU
-  baseUrl: baseUrl: maria-yogurt.github.io/CHARS
+  baseUrl: maria-yogurt.github.io/CHARS
   ignorePatterns:
     - private
     - templates
