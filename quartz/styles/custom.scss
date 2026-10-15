@@ -1,3 +1,95 @@
+
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+/* =========================================
+   ARCHIVE / INDEX — links and interactions
+   ========================================= */
+
+/* Smooth color transitions */
+a,
+button,
+.explorer button,
+.search-button,
+.darkmode {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    opacity 180ms ease;
+}
+
+/* Links inside article text */
+.center article a,
+article a {
+  color: var(--secondary);
+  text-decoration: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  border-bottom: 1px solid color-mix(in srgb, var(--secondary) 35%, transparent);
+}
+
+.center article a:hover,
+article a:hover {
+  color: var(--tertiary);
+  border-bottom-color: var(--tertiary);
+}
+
+/* Headings: no decorative underlines */
+article h1 a,
+article h2 a,
+article h3 a,
+article h4 a {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+/* Sidebar links */
+.explorer a,
+.explorer button,
+.sidebar a {
+  color: var(--darkgray);
+}
+
+.explorer a:hover,
+.explorer button:hover,
+.sidebar a:hover {
+  color: var(--secondary);
+}
+
+/* Active and selected navigation items */
+.explorer .active,
+.explorer a.active,
+.sidebar a.active {
+  color: var(--secondary);
+}
+
+/* Search controls */
+.search-button:hover,
+button:hover {
+  border-color: var(--secondary);
+}
+
+/* Text selection */
+::selection {
+  background: var(--highlight);
+}
+
+/* Keyboard accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 3px;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
