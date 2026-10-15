@@ -1,14 +1,13 @@
-
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Архив персонажей
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
-  locale: en-US
-  baseUrl: quartz.jzhao.xyz
+  locale: ru-RU
+  baseUrl: maria-yogurt.github.io/CHARS
   ignorePatterns:
     - private
     - templates
