@@ -276,3 +276,104 @@ input:focus-visible {
     margin-top: 2rem;
   }
 }
+
+/* =========================================
+   ARCHIVE / INDEX — sidebar and navigation
+   ========================================= */
+
+/* Sidebar separators */
+.sidebar.left,
+.sidebar.right {
+  border-color: var(--lightgray);
+}
+
+/* Sidebar text */
+.sidebar {
+  font-size: 0.92rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+/* Page title in the sidebar */
+.page-title {
+  font-family: var(--headerFont);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.page-title a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.page-title a:hover {
+  color: var(--secondary);
+}
+
+/* Search button */
+.search > button,
+.search-button {
+  border: 1px solid var(--lightgray);
+  border-radius: 4px;
+  background: var(--light);
+  color: var(--darkgray);
+}
+
+.search > button:hover,
+.search-button:hover {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+/* Explorer heading and folder controls */
+.explorer,
+.explorer-content {
+  font-size: 0.9rem;
+}
+
+.explorer button {
+  border-radius: 3px;
+}
+
+.explorer button:hover {
+  color: var(--secondary);
+  background: var(--highlight);
+}
+
+.explorer a {
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.explorer a:hover {
+  color: var(--secondary);
+  background: var(--highlight);
+}
+
+/* Subtle active page indication */
+.explorer .active,
+.explorer a.active {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+/* Toolbar controls */
+.sidebar .darkmode,
+.sidebar .reader-mode,
+.sidebar .search-button {
+  transition: color 180ms ease, border-color 180ms ease;
+}
+
+.sidebar .darkmode:hover,
+.sidebar .reader-mode:hover {
+  color: var(--secondary);
+}
+
+/* Mobile spacing */
+@media (max-width: 800px) {
+  .sidebar {
+    font-size: 0.95rem;
+  }
+}
