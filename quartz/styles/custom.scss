@@ -1,3 +1,379 @@
+
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+/* =========================================
+   ARCHIVE / INDEX — links and interactions
+   ========================================= */
+
+/* Smooth color transitions */
+a,
+button,
+.explorer button,
+.search-button,
+.darkmode {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    opacity 180ms ease;
+}
+
+/* Links inside article text */
+.center article a,
+article a {
+  color: var(--secondary);
+  text-decoration: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  border-bottom: 1px solid color-mix(in srgb, var(--secondary) 35%, transparent);
+}
+
+.center article a:hover,
+article a:hover {
+  color: var(--tertiary);
+  border-bottom-color: var(--tertiary);
+}
+
+/* Headings: no decorative underlines */
+article h1 a,
+article h2 a,
+article h3 a,
+article h4 a {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+/* Sidebar links */
+.explorer a,
+.explorer button,
+.sidebar a {
+  color: var(--darkgray);
+}
+
+.explorer a:hover,
+.explorer button:hover,
+.sidebar a:hover {
+  color: var(--secondary);
+}
+
+/* Active and selected navigation items */
+.explorer .active,
+.explorer a.active,
+.sidebar a.active {
+  color: var(--secondary);
+}
+
+/* Search controls */
+.search-button:hover,
+button:hover {
+  border-color: var(--secondary);
+}
+
+/* Text selection */
+::selection {
+  background: var(--highlight);
+}
+
+/* Keyboard accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 3px;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* =========================================
+   ARCHIVE / INDEX — homepage
+   ========================================= */
+
+.archive-home {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 0 3rem;
+}
+
+.archive-home .archive-eyebrow,
+.archive-home .archive-section-label,
+.archive-home .archive-card-number,
+.archive-home .archive-index-number,
+.archive-home .archive-footer {
+  font-family: var(--codeFont);
+  font-size: 0.72rem;
+  letter-spacing: 0.09em;
+}
+
+.archive-home .archive-eyebrow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--secondary);
+  padding-bottom: 1rem;
+}
+
+.archive-home .archive-eyebrow span,
+.archive-home .archive-footer span {
+  color: var(--gray);
+}
+
+.archive-home .archive-title {
+  font-family: var(--headerFont);
+  font-size: clamp(3rem, 8vw, 5.8rem);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  margin: 2.5rem 0 1.5rem;
+  border: none;
+}
+
+.archive-home .archive-intro {
+  color: var(--darkgray);
+  font-size: 1.08rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.archive-home .archive-rule {
+  height: 1px;
+  background: var(--lightgray);
+  margin: 2.5rem 0;
+}
+
+.archive-home .archive-section-label {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.archive-home .archive-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.archive-home .archive-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  min-height: 175px;
+  padding: 1.4rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 4px;
+  background: var(--light);
+  text-decoration: none;
+  color: var(--dark);
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.archive-home .archive-card:hover {
+  border-color: var(--secondary);
+  background: var(--highlight);
+  transform: translateY(-2px);
+}
+
+.archive-home .archive-card-primary {
+  grid-column: 1 / -1;
+  min-height: 190px;
+}
+
+.archive-home .archive-card-number {
+  color: var(--secondary);
+}
+
+.archive-home .archive-card-title {
+  font-family: var(--headerFont);
+  font-size: 1.55rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.archive-home .archive-card-description {
+  max-width: 34rem;
+  color: var(--darkgray);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.archive-home .archive-card-arrow {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.25rem;
+  color: var(--secondary);
+  font-size: 1.1rem;
+}
+
+.archive-home .archive-index-section {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--lightgray);
+  scroll-margin-top: 2rem;
+}
+
+.archive-home .archive-index-number {
+  color: var(--secondary);
+  padding-top: 0.4rem;
+}
+
+.archive-home .archive-index-section h2 {
+  margin: 0 0 0.6rem;
+  font-family: var(--headerFont);
+  font-weight: 500;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.archive-home .archive-index-section p {
+  margin: 0;
+  color: var(--darkgray);
+  line-height: 1.7;
+}
+
+.archive-home .archive-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--secondary);
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .archive-home {
+    padding-top: 0.5rem;
+  }
+
+  .archive-home .archive-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-home .archive-card-primary {
+    grid-column: auto;
+  }
+
+  .archive-home .archive-card {
+    min-height: 150px;
+  }
+
+  .archive-home .archive-title {
+    margin-top: 2rem;
+  }
+}
+
+/* =========================================
+   ARCHIVE / INDEX — sidebar and navigation
+   ========================================= */
+
+/* Sidebar separators */
+.sidebar.left,
+.sidebar.right {
+  border-color: var(--lightgray);
+}
+
+/* Sidebar text */
+.sidebar {
+  font-size: 0.92rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+/* Page title in the sidebar */
+.page-title {
+  font-family: var(--headerFont);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.page-title a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.page-title a:hover {
+  color: var(--secondary);
+}
+
+/* Search button */
+.search > button,
+.search-button {
+  border: 1px solid var(--lightgray);
+  border-radius: 4px;
+  background: var(--light);
+  color: var(--darkgray);
+}
+
+.search > button:hover,
+.search-button:hover {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+/* Explorer heading and folder controls */
+.explorer,
+.explorer-content {
+  font-size: 0.9rem;
+}
+
+.explorer button {
+  border-radius: 3px;
+}
+
+.explorer button:hover {
+  color: var(--secondary);
+  background: var(--highlight);
+}
+
+.explorer a {
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.explorer a:hover {
+  color: var(--secondary);
+  background: var(--highlight);
+}
+
+/* Subtle active page indication */
+.explorer .active,
+.explorer a.active {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+/* Toolbar controls */
+.sidebar .darkmode,
+.sidebar .reader-mode,
+.sidebar .search-button {
+  transition: color 180ms ease, border-color 180ms ease;
+}
+
+.sidebar .darkmode:hover,
+.sidebar .reader-mode:hover {
+  color: var(--secondary);
+}
+
+/* Mobile spacing */
+@media (max-width: 800px) {
+  .sidebar {
+    font-size: 0.95rem;
+  }
+}
