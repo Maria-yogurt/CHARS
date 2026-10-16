@@ -3,7 +3,7 @@ title: Главная
 ---
 
 *PERSONAL DATABASE*
-*IN PROGRESS*
+(*IN PROGRESS*)
 
 ___
 
