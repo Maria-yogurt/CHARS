@@ -2,7 +2,7 @@
 title: Главная
 ---
 
-A / I PERSONAL DATABASE · EST. UNKNOWN
+PERSONAL DATABASE
 ___
 
 ##### *Собрание личных дел, биографий, мест и историй.*  
