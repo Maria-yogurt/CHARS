@@ -1,5 +1,37 @@
-<p align="center">
-  <a href="https://maria-yogurt.github.io/CHARS/">
-    <img src="https://maria-yogurt.github.io/CHARS/static/images/og-archive.png" alt="Архив персонажей" width="800">
-  </a>
-</p>>
+# A / I — PERSONAL DATABASE
+
+*Архив персонажей · Личные дела · Истории · Миры*
+
+---
+
+> Собрание личных дел, биографий, мест и историй.  
+> Каждая запись — часть чего-то большего.
+
+**STATUS:** IN PROGRESS  
+**ESTABLISHED:** UNKNOWN
+
+---
+
+## INDEX
+
+**01 / PERSONNEL** — [Личные дела](https://maria-yogurt.github.io/CHARS/1%20Личные%20дела/!%20Справка)
+
+Основные персонажи, их биографии, внешность, характер, прошлое и связи.
+
+**02 / PEOPLE** — [Второстепенные персонажи](https://maria-yogurt.github.io/CHARS/2%20Второстепенные%20персонажи/!%20Справка)
+
+Знакомые лица, эпизодические герои и персонажи, связанные с основными историями.
+
+**03 / LOCATIONS** — [Места действий](https://maria-yogurt.github.io/CHARS/3%20Места%20действий/!%20Справка)
+
+Миры, города, страны и другие локации, в которых разворачиваются истории.
+
+**04 / ARCHIVE** — [Прочее](https://maria-yogurt.github.io/CHARS/Прочее/!%20Справка)
+
+Дополнительные материалы, события, хронология, термины и заметки о мире.
+
+---
+
+**THE ARCHIVE IS IN PROGRESS.**
+
+[OPEN DATABASE ↗](https://maria-yogurt.github.io/CHARS/)
