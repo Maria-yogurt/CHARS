@@ -1,6 +1,12 @@
 ---
 title: Главная
 ---
+---
+title: "Архив персонажей"
+description: "Собрание личных дел, биографий, мест и историй."
+socialDescription: "Личные дела. Истории. Миры. Единый архив персонажей и связанных с ними материалов."
+socialImage: "images/og-archive.png"
+---
 
 *PERSONAL DATABASE*
 (*IN PROGRESS*)
