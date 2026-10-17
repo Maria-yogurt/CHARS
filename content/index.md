@@ -30,3 +30,5 @@ ___
 
 Дополнительные материалы, события, хронология, термины и заметки о мире.
 
+___
+![БАННЕР ДЛЯ ГЛАВНОЙ](https://maria-yogurt.github.io/CHARS/static/images/PROCHEE/BANNERGLAVNOY.jpg)
