@@ -32,4 +32,4 @@ _PERSONAL DATABASE_
 
 ---
 
-[БАННЕР ДЛЯ ГЛАВНОЙ](https://maria-yogurt.github.io/CHARS/static/images/PROCHEE/BANNERGLAVNOY.jpg)
+![БАННЕР ДЛЯ ГЛАВНОЙ](https://maria-yogurt.github.io/CHARS/static/images/PROCHEE/BANNERGLAVNOY.jpg)
