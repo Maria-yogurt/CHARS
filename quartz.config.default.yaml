@@ -215,7 +215,7 @@ plugins:
       group: toolbar
 
   - source: "@quartz-community/reader-mode"
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35
@@ -248,7 +248,7 @@ plugins:
       priority: 50
 
   - source: "@quartz-community/recent-notes"
-    enabled: false
+    enabled: true
 
   - source: "@quartz-community/spacer"
     enabled: true
