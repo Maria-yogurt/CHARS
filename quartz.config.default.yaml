@@ -139,7 +139,7 @@ plugins:
     enabled: true
 
   - source: "@quartz-community/og-image"
-    enabled: true
+    enabled: false
 
   - source: "@quartz-community/cname"
     enabled: true
@@ -238,7 +238,7 @@ plugins:
       priority: 10
 
   - source: "@quartz-community/footer"
-    enabled: true
+    enabled: false
     options:
       links:
         GitHub: "https://github.com/jackyzha0/quartz"
