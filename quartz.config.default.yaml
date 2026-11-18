@@ -16,9 +16,9 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Press Start 2P
-      body: Source Code Pro
-      code: Source Code Pro
+      header: "Press Start 2P"
+      body: "Source Code Pro"
+      code: "Source Code Pro"
     colors:
       lightMode:
         light: "#F3F0E8"
