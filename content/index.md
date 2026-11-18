@@ -28,4 +28,4 @@ title: Архив персонажей
 
 ---
 
-![БАННЕР ДЛЯ ГЛАВНОЙ|604x201](https://maria-yogurt.github.io/CHARS/static/images/PROCHEE/BANNERGLAVNOY.jpg)
+![БАННЕР ДЛЯ ГЛАВНОЙ|604x201](https://maria-yogurt.github.io/CHARS/static/images/PROCHEE/GLAVNAYA-BANNER.jpg)
