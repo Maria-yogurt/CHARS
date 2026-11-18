@@ -1,5 +1,5 @@
 ---
-title: Главная
+title: Архив персонажей
 ---
 
 _PERSONAL DATABASE_  
