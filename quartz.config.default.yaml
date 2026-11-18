@@ -1,3 +1,4 @@
+
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: Архив персонажей
@@ -16,9 +17,9 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Literata
-      body: Source Sans 3
-      code: IBM Plex Mono
+      header: Press Start 2P
+      body: Source Code Pro
+      code: Source Code Pro
     colors:
       lightMode:
         light: "#F3F0E8"
