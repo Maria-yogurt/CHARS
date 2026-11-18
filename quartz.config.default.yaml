@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Архив персонажей
+  pageTitle: 🗂️ CHARS DB
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -16,9 +16,9 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Literata
-      body: Source Sans 3
-      code: IBM Plex Mono
+      header: "Anonymous Pro"
+      body: "Anonymous Pro"
+      code: "Anonymous Pro"
     colors:
       lightMode:
         light: "#F3F0E8"
